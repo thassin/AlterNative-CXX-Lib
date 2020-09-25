@@ -57,7 +57,7 @@ namespace System{
 			return System::Convert::ToSingle(text);
 		}
         static float IsNaN(float a) {
-            return isnan(a);
+            return std::isnan(a);
         }
         static constexpr float PositiveInfinity = std::numeric_limits<float>::infinity();
         static constexpr float NaN = std::numeric_limits<float>::quiet_NaN();
@@ -72,7 +72,7 @@ namespace System{
 			return System::Convert::ToDouble(text);
 		}
         static double IsNaN(double a) {
-            return isnan(a);
+            return std::isnan(a);
         }
         static constexpr double PositiveInfinity = std::numeric_limits<double>::infinity();
         static constexpr double NaN = std::numeric_limits<double>::quiet_NaN();
